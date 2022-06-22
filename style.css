@@ -1,0 +1,223 @@
+body {
+    font-family: 'Manrope', sans-serif;;
+    color: #FFF;
+    border: #29292E;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: url(blur-1.png),
+                url(blur-2.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    box-sizing: border-box;
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    
+    margin: 3% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; 
+    text-align: center;
+    
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 1rem;
+    display: block;
+    transition: 1s;
+}
+
+.navbar-links li a:hover {
+    color: #8257E5;
+} 
+
+#svg-logo-desk {
+    margin-right: 10%;
+}
+
+#svg-logo-mob {
+    display: none;
+    background-color: transparent;
+    margin-left: 0;
+    
+    
+    
+}
+
+#pegar-desk {
+    text-align: center;
+    margin-left: 60px;
+    background: none;
+    color: #fff;
+    padding: 15px 75px;
+    border-color: #8257E5;
+    border-radius: 10px;  
+    transition: 1s;
+}
+
+#pegar-desk:hover {
+    background-color: #8257E5;
+    cursor: pointer;   
+}
+
+.tittle-mob {
+    display: none;
+    margin: 0;
+}
+
+.tittle-mob h1 {
+    margin: 10% 0 0 0;
+}
+
+.tittle-desk {
+    text-align: center;
+    
+}
+
+.tittle-desk h1 {
+    font-size: 4em;
+}
+#Great-code { 
+    margin-top: -40px;
+    font-family: Helvetica;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #8257E5;
+}
+
+#img {
+   
+     
+    text-align: center;
+    
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 10px;             
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(1, 1, 1);        
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #8257E5;  
+    border-radius: 20px;      
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background-image: url(blur-mobile.png);
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    #svg-logo-desk {
+        display: none ;
+    }
+
+    #svg-logo-mob {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;
+        padding-bottom: 10px;
+        border-bottom: 1px solid  #29292e;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: left;
+    }
+
+    .navbar-links li a { 
+        border-bottom: 1px solid #29292E;
+    }
+
+    .tittle-mob {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        z-index: 10;
+       background: #000;
+        
+    
+    }
+
+    #img img{
+       text-align: center;
+        max-width: 20rem;
+    }
+
+    #pegar-desk {
+        display: none;
+    }
+
+    #pegar-mob {
+        text-align: center;
+        margin-top: 10%;
+        background: none;
+        color: #fff;
+        padding: 15px 75px;
+        border-color: #8257E5;
+        border-radius: 10px;  
+        transition: 1s;
+    }
+    
+    #pegar-mob:hover {
+        background-color: #8257E5;
+        cursor: pointer;   
+    }
+
+    
+}

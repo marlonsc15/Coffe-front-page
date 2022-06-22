@@ -102,7 +102,18 @@ body {
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #8257E5;
+    animation: bg 2s infinite;
 }
+
+
+
+@keyframes bg {
+    10% {
+        color: #8257E5;
+    }
+}
+
+
 
 #img {
    
